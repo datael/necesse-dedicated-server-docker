@@ -10,6 +10,4 @@ services:
       - ./save-data:/root/.config/Necesse
     ports:
       - "14159:14159"
-    environment:
-      - WORLD_NAME=default-server
     command: -world $WORLD_NAME
