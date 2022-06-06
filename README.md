@@ -4,7 +4,7 @@
 
 * Key files
     * save-data/cfg/server.cfg
-    * save-data/saves/default-server/worlsSettings.cfg
+    * save-data/saves/default-world/worlsSettings.cfg
     * .env
         * Update the server by changing the URL in this file to the latest Linux version [found here](https://necessegame.com/server)
 * Remember to forward port 14159 to your server
