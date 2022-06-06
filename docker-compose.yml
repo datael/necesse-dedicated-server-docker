@@ -9,6 +9,9 @@ services:
     restart: unless-stopped
     volumes:
       - ./save-data:/root/.config/Necesse
-    ports:
-      - "14159:14159"
+    # Unable to figure out how to change the game server to listen on 0.0.0.0,
+    # so using this until I can figure that out (probably easiest to add a proxy?)
+    network_mode: host
+    # ports:
+    #   - "14159:14159"
     command: -world $WORLD_NAME
