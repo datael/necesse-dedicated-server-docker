@@ -6,6 +6,7 @@ services:
       context: game-server
       args:
         - SERVER_DOWNLOAD_URL=$SERVER_DOWNLOAD_URL
+    restart: unless-stopped
     volumes:
       - ./save-data:/root/.config/Necesse
     ports:
