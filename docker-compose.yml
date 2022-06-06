@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  necesse-game-server:
+    build:
+      context: game-server
+      args:
+        - SERVER_DOWNLOAD_URL=$SERVER_DOWNLOAD_URL
+    volumes:
+      - ./save-data:/root/.config/Necesse
+    ports:
+      - "14159:14159"
+    environment:
+      - WORLD_NAME=default-server
+    command: -world $WORLD_NAME

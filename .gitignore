@@ -1,0 +1,12 @@
+save-data/*
+!save-data/saves
+!save-data/cfg
+
+save-data/saves/*
+!save-data/saves/default-server
+
+save-data/saves/default-server/*
+!save-data/saves/default-server/worldSettings.cfg
+
+save-data/cfg/*
+!save-data/cfg/server.cfg
