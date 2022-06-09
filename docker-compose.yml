@@ -1,7 +1,7 @@
 version: '3'
 
 services:
-  necesse-game-server:
+  game-server:
     build:
       context: game-server
       args:
