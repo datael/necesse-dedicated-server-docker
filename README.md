@@ -28,7 +28,7 @@ Go to the [Necesse server download page](https://necessegame.com/server) and loc
 Yes!
 
 ### Slightly longer answer
-If you have a 64-bit operating system, you should be able to use this compose file as-is. If, however, you are using a 32-bit operating system and receive an error when you try to build the docker images, saying something about linux/arm/v7, you'll need to switch to the 32 bit version.
+If you have a 64-bit operating system, you should be able to use this compose file as-is. If, however, you are using a 32-bit operating system and receive an error when you try to build the docker images saying something about linux/arm/v7, you'll need to switch to the 32-bit version.
 
 To do this, change which `JAVA_VERSION` line is active in the .env file. The line that has arm32v7 in it should be active (should not start with a #).
 
