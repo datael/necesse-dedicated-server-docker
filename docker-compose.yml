@@ -5,8 +5,8 @@ services:
     build:
       context: game-server
       args:
-        - JAVA_VERSION=${JAVA_VERSION?:Please set the java version to a valid docker image name in the .env file.}
-        - SERVER_DOWNLOAD_URL=${SERVER_DOWNLOAD_URL:?Please set the server download URL in the .env file.}
+        - JAVA_VERSION=${JAVA_VERSION?:Please set the java version to a valid docker image name in the .env file. See the readme for more troubleshooting information.}
+        - SERVER_DOWNLOAD_URL=${SERVER_DOWNLOAD_URL:?Please set the server download URL in the .env file. See the readme for more troubleshooting information.}
     restart: unless-stopped
     volumes:
       - ./save-data:/root/.config/Necesse
@@ -15,4 +15,4 @@ services:
     network_mode: host
     # ports:
     #   - "14159:14159"
-    command: -world ${WORLD_NAME:?Please set the world name in the .env file.}
+    command: -world ${WORLD_NAME:?Please set the world name in the .env file. See the readme for more troubleshooting information.}
