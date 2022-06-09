@@ -1,3 +1,5 @@
+ARG JAVA_VERSION
+
 FROM busybox as downloader
 
 WORKDIR /dl
@@ -11,7 +13,7 @@ RUN unzip *.zip \
     && mv "${dir}" ./server \
     && rm -rf ./server/jre
 
-FROM amazoncorretto
+FROM $JAVA_VERSION
 
 COPY --from=downloader /dl/server /necesse-server
 
