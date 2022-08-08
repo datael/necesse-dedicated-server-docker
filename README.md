@@ -10,7 +10,7 @@ Default server password is `password123`.
 
 ### Key files
 * save-data/cfg/server.cfg
-* save-data/saves/default-world/worlsSettings.cfg
+* save-data/saves/default-world/worldSettings.cfg
 * .env
     * Update the server by changing the URL in this file to the latest Linux version [found here](https://necessegame.com/server)
 
