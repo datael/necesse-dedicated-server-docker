@@ -15,4 +15,3 @@ services:
     network_mode: host
     # ports:
     #   - "14159:14159"
-    command: -world ${WORLD_NAME:?Please set the world name in the .env file. See the readme for more troubleshooting information.}
